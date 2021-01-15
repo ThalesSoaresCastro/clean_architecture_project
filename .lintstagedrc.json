@@ -1,6 +1,5 @@
 {
     "*.ts": [
-        "eslint --fix",
-        "yarn run test-staged --passWithNoTests"
+        "eslint --fix"
     ]
 }
