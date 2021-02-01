@@ -6,8 +6,6 @@ import { InMemoryUserRepository } from '@test/usecases/register-user-on-mailing-
 describe('Register user on mailing list use case', () => {
   test('should add user with complete data to mailing list', async () => {
     const users: UserData[] = []
-    console.log(users)
-
     const repo: UserRepository = new InMemoryUserRepository(users)
     const usecase: RegisterUserOnMailingList = new RegisterUserOnMailingList(repo)
 
@@ -23,8 +21,6 @@ describe('Register user on mailing list use case', () => {
 
   test('should not add user with invalid email to mailing list', async () => {
     const users: UserData[] = []
-    console.log(users)
-
     const repo: UserRepository = new InMemoryUserRepository(users)
     const usecase: RegisterUserOnMailingList = new RegisterUserOnMailingList(repo)
 
