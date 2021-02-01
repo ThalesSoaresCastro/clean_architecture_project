@@ -22,4 +22,8 @@ describe('Register user web controller', () => {
     expect(response.statusCode).toEqual(201)
     expect(response.body).toEqual(request.body)
   })
+
+  test('should return status code 500 when request contains invalid user data', async () => {
+
+  })
 })
