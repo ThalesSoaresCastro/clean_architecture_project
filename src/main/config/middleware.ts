@@ -3,7 +3,7 @@ import {
   bodyParser,
   cors,
   contentType
-} from '@/main/config/middleware/'
+} from '@/main/middleware'
 
 export default (app: Express): void => {
   app.use(bodyParser)
