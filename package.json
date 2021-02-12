@@ -10,7 +10,8 @@
     "test-integration": "yarn test -- --watch -c jest-integration-config.js",
     "test-staged": "yarn test -- --findRelatedTests",
     "test-ci": "yarn test -- --coverage",
-    "build": "rimraf dist && tsc -p tsconfig-build.json"
+    "build": "rimraf dist && tsc -p tsconfig-build.json",
+    "start": "node dist/main/server.js"
   },
   "repository": {
     "type": "git",
